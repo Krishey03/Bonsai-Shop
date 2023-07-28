@@ -1,0 +1,151 @@
+
+/* Navigation Bar */
+
+nav{
+    width: 100%;
+    height: 85px;
+    background-color: white;
+
+    /* this make the nav bar stick to the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 40px;
+    
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+/* Style for all tags in nav */
+nav > *{
+    position: relative;
+    margin: 0;
+}
+
+/* Style for class h-logo */
+.h-logo{
+    display: flex;
+    align-items: center;
+}
+
+/* Style for class h-slogan */
+.h-slogan{
+    display: flex;
+    flex-wrap: wrap;     
+}
+
+/* Style for all elements in class h-slogan */
+.h-slogan > *{
+    flex-basis: 100%;
+}
+
+/* Style for navbar in class h-slogan */
+.h-slogan p{
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;  
+    transition: 0.75s; 
+}
+
+nav li:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Style for the current page */
+.active{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+    
+/* Search Bar */
+
+/* Style for the search bar in nav */
+nav .h-search{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    width: 700px;
+}
+
+/* Style for the input section in search bar */
+nav .h-search input[type=text]{
+    width: 400px;
+    padding: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    border: 2px solid black;
+    border-radius: 20px 0 0 20px;
+}
+
+/* Style for the button section in search bar */
+nav .h-search button{
+    background-color: orange;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Search Bar */
+
+/* Login and Cart section */
+
+/* Style for class h-profile in nav bar*/
+nav .h-profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Style for img in class h-profile of nav bar*/
+nav .h-profile img{
+    width: 38px;
+    height: 38px;
+}
+
+/* Style for class h-cart of nav bar*/
+nav .h-cart{
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: right;
+    align-items: center;
+}
+
+/* Style for img in class h-cart of nav bar*/
+nav .h-cart img{
+    color: white;
+    width: 38px;
+    height: 38px;
+}
+/* Navigation Bar */

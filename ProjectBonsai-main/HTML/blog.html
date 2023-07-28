@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog</title>
+    <meta name="description" content="Blog page of Bonsai Plant E-commerce">
+    <meta name="keywords"
+        content="bonzai, bonsai, bonsai online, buy bonsai online, blog about bonsai, blog about technology">
+    <meta name="author" content="Aadesh Shrestha">
+    <link rel="stylesheet" href="../nav and footer/nav-style-only.css">
+    <link rel="stylesheet" href="../nav and footer/footer-style-only.css">
+    <style type="text/css">
+        /* This styles the universal selector */
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* This style set the background color of the body */
+        body {
+            background-color: white;
+        }
+
+        /* Class wrapper helps to align the sections. */
+        .wrapper {
+            width: 90%;
+        }
+
+        /* Class container helps to align the sections. */
+        .container {
+            width: 95%;
+        }
+
+        /* Blog Section */
+
+        /* Style for the blog section  */
+        #blog {
+            margin-top: 85px;
+            padding: 20px 0;
+            background-color: #D4FCAB;
+            background-color: white;
+        }
+
+        /* Style for main heading */
+        #blog h1 {
+            /* border: 2px solid red; */
+            text-align: center;
+            padding-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 75px;
+        }
+
+        /* Style for article tag to make spce below */
+        article {
+            margin-bottom: 30px;
+        }
+
+        /* Style for large Blog */
+
+        .blog {
+            background-color: #D4FCAB;
+            background-color: white;
+            background-color: #A8AAB6;
+            border-radius: 20px;
+            border: 1px solid #A8AAB6;
+            box-shadow: 8px 10px 15px #A8AAB6;
+            padding: 0 0 10px 0;
+        }
+
+        .blog h2 {
+            /* border: 2px solid purple; */
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+
+            padding-top: 20px;
+        }
+
+        .blog-body {
+            padding: 0 50px;
+        }
+
+        .blog-img {
+            /* border: 1px solid blue; */
+            display: flex;
+            align-items: center;
+        }
+
+        .blog-para {
+            width: 90%;
+        }
+
+        .blog-para p {
+            padding: 20px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            text-align: justify;
+        }
+
+
+        .blog-para button {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            border: none;
+            padding: 15px 20px;
+            text-align: left;
+            text-decoration: none;
+
+
+            cursor: pointer;
+        }
+
+        /* Style for large Blog */
+
+        /* Style for small blog */
+        .blog-row {
+            display: flex;
+            gap: 1em;
+        }
+
+        .blog-row>* {
+            flex-basis: 100%;
+        }
+
+        .blog-mini {
+            background-color: #A8AAB6;
+            border-radius: 20px;
+            border: 1px solid #A8AAB6;
+            box-shadow: 8px 10px 15px #A8AAB6;
+            padding: 0 0 10px 0;
+        }
+
+        .blog-mini h2 {
+            /* border: 2px solid purple; */
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+
+            padding-top: 20px;
+        }
+
+        .blog-mini-body {
+            padding: 0 50px;
+        }
+
+        .blog-mini-para {
+            width: 90%;
+        }
+
+        .blog-mini-para p {
+            padding: 20px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+
+        .blog-mini-para button {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            border: none;
+            padding: 15px 20px;
+            text-align: left;
+            text-decoration: none;
+
+
+            cursor: pointer;
+        }
+
+        /* Style for small blog */
+
+        /* Style for required for JavaScript */
+        #more1 {
+            display: none;
+        }
+
+        #more2 {
+            display: none;
+        }
+
+        #more3 {
+            display: none;
+        }
+
+        #more4 {
+            display: none;
+        }
+
+        #more5 {
+            display: none;
+        }
+
+        /* Blog Section */
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="h-logo">
+            <a href="../index.html">
+                <img src="../images/logo-f.png" alt="logo" width="50px" height="90%">
+            </a>
+        </div>
+        <div class="h-slogan">
+            <p>Make Your Bonsai Dreams Come True</p>
+            <div class="navbar">
+                <ul>
+                    <a href="../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="products.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li class="active">Blog</li>
+                    </a>
+                    <a href="research.html">
+                        <li>Research</li>
+                    </a>
+                    <a href="aboutus.html">
+                        <li>About us</li>
+                    </a>
+                    <a href="contact-us.html">
+                        <li>Contact us</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="h-search">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for Blog">
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="h-profile">
+            <a href="#">
+                <img src="../images/login-f-100.png" alt="login" width="50px" height="50px">
+            </a>
+        </div>
+
+        <div class="h-cart">
+            <a href="#">
+                <img src="../images/cart-f-500.png" alt="cart" width="50px" height="50px">
+            </a>
+        </div>
+    </nav>
+    <!-- Navigation Bar -->
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h1>Blog</h1>
+
+        <!-- First Blog -->
+        <article>
+            <div class="wrapper">
+                <div class="blog">
+                    <h2> What is Bonsai?</h2>
+                    <p
+                        style="text-align: right; padding: 10px 50px 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+                        - January 27, 2023
+                    </p>
+                    <div class="blog-body">
+                        <div class="blog-img">
+                            <img src="../images/blog/blogp1.jpg" alt="bonsai img"
+                                style="width: 80%; border-radius: 15px;">
+                        </div>
+                        <div class="blog-para">
+                            <p>Bonsai is an ancient Japanese art form that involves cultivating miniature trees in
+                                containers. The practice of bonsai dates back over a thousand years and involves a
+                                combination of horticultural techniques, artistic expression, and spiritual practices.
+                                Bonsai trees are grown from seed or cuttings and are trained to grow into specific
+                                shapes and sizes by pruning, wiring, and controlling their environment. This process can
+                                take years or even decades to achieve, with the tree being shaped and re-shaped over
+                                time to achieve the desired result.<span id="dots1">..</span><span id="more1">
+                                    <br>
+                                    <br>
+
+                                    The goal of bonsai is to create a miniaturized representation of a mature tree in
+                                    nature, complete with a trunk, branches, foliage, and sometimes even roots and a
+                                    soil bed. To achieve this, bonsai artists must understand the natural growth
+                                    patterns of their trees, as well as the techniques required to keep them healthy and
+                                    maintain their appearance.Bonsai trees can range in size from a few inches tall to
+                                    several feet, and come in a wide variety of styles and species, each with its own
+                                    unique set of cultural and horticultural requirements. Some of the most common
+                                    species used in bonsai include pines, ficus, maples, and junipers.
+                                    <br>
+                                    <br>
+
+                                    Furthermore, bonsai is also an art form that is highly valued for its aesthetic
+                                    beauty. The beauty of a bonsai tree lies not just in its size and shape, but also in
+                                    the overall composition of the tree and its container,
+                                    as well as the placement and arrangement of the elements within the scene. Beyond
+                                    its aesthetic value, bonsai also has a spiritual aspect, with many practitioners
+                                    viewing it as a meditative practice and a means of connecting with nature. The care
+                                    and attention required to create and maintain a bonsai tree is seen as a way of
+                                    nurturing a living being, and the final result is seen as a symbol of the
+                                    interconnectedness of all living things.
+                                    <br>
+                                    <br>
+
+                                    In conclusion, bonsai is a unique and fascinating art form that combines
+                                    horticulture, art, and spirituality to create miniature representations of nature.
+                                    Whether viewed as an aesthetic object, a spiritual practice, or simply a
+                                    horticultural challenge, bonsai continues to captivate and inspire people around the
+                                    world.</span></p>
+                            <button onclick="readMore1()" id="rm1">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- First Blog -->
+
+        <!-- Second Blog -->
+        <article>
+            <div class="wrapper">
+                <div class="blog">
+                    <h2>Today's Technology</h2>
+                    <p
+                        style="text-align: right; padding: 10px 50px 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+                        - January 17, 2023
+                    </p>
+                    <div class="blog-body">
+                        <div class="blog-img">
+                            <img src="../images/blog/blogp3.jpg" alt="bonsai img"
+                                style="width: 80%; border-radius: 15px;">
+                        </div>
+                        <div class="blog-para">
+                            <p>Today's technology has changed the way we live, work and communicate. The internet
+                                has connected people from all over the world and has made information about anything
+                                very easily accessible to everyone. Smartphones allowing us to stay connected, make
+                                calls, send messages and access the internet from anywhere at any time.<span id="dots2">..</span><span id="more2">
+                                    <br>
+                                    <br>
+
+                                    Artificial intelligence has also made substantial breakthroughs, from virtual
+                                    personal assistants like Siri and Alexa to self-driving cars. These technologies
+                                    have
+                                    made our lives easier, convenient and efficient. For example, online shopping
+                                    has made it possible to purchase goods and services from the comfort of our own
+                                    homes, while telecommuting has allowed us to work remotely from anywhere with an
+                                    internet connection.
+                                    <br>
+                                    <br>
+
+                                    However, the widespread use of technology also has its drawbacks. Social media
+                                    can be sources of misinformation and can negatively impact mental health of a
+                                    person. The increasing dependence on technology has also led to job
+                                    loss in certain industries and a decline in interpersonal communication.
+                                </span>
+                            </p>
+                            <button onclick="readMore2()" id="rm2">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Second Blog -->
+
+        <!-- Three Blog Row -->
+        <article>
+            <div class="wrapper">
+                <div class="blog-row">
+                    <div class="blog-mini">
+                        <h2>Positive Impacts of Technology</h2>
+                        <p
+                            style="text-align: right; padding: 10px 50px 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+                            - January 5, 2023
+                        </p>
+                        <div class="blog-mini-body">
+
+                            <div class="blog-mini-para">
+                                <p>Technology has had a significant impact on society and has greatly improved our daily
+                                    lives. One of the most notable positive impacts of technology is the
+                                    accessibility of information. The internet has made it possible to access vast
+                                    amounts of information from anywhere in the world at any time. This has led to
+                                    increased knowledge and understanding.<span id="dots3">..</span><span id="more3">
+                                        <br>
+                                        <br>
+
+                                        Another major benefit of technology is the increase in efficiency and
+                                        productivity. Automation and digital tools have made many
+                                        tasks faster and easier to complete, freeing up time for more important work.
+                                        Furthermore, technology has also made communication easier and more efficient by
+                                        connecting individuals from different parts of the world.
+
+                                    </span>
+                                </p>
+                                <button onclick="readMore3()" id="rm3">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-mini">
+                        <h2>Impact of technology while selling Bonsai plants</h2>
+                        <p
+                            style="text-align: right; padding: 10px 50px 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+                            - January 5, 2023
+                        </p>
+                        <div class="blog-mini-body">
+
+                            <div class="blog-mini-para">
+                                <p>Technology has had a profound impact on the way bonsai plants are sold. Online
+                                    marketplaces have made it easier for small gardening nurseries and retailers
+                                    to reach more customers and sell their products all over the world.
+                                    This has increased accessibility for customers who may not have access to local
+                                    bonsai stores. Also, people have been able to learn about the wonderful culture of
+                                    owning a bonsai plant due to information available in the internet. The demand
+                                    increases when more inforamtion is accessible to everyone.<span
+                                        id="dots4">..</span><span id="more4">
+                                        <br>
+                                        <br>
+
+                                        However, technology has also had some negative impacts on the bonsai plant
+                                        industry. The use of digital images and videos for product promotion has led to
+                                        an increase in fraud and misinformation. This reliance on technology for plant
+                                        selection makes it difficult for customers to accurately assess the quality and
+                                        condition of the plants they are purchasing.
+                                    </span></p>
+                                <button onclick="readMore4()" id="rm4">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-mini">
+                        <h2>Negative Impacts of Technology</h2>
+                        <p
+                            style="text-align: right; padding: 10px 50px 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+                            - January 5, 2023
+                        </p>
+                        <div class="blog-mini-body">
+
+                            <div class="blog-mini-para">
+                                <p>The rapid advancements in technology have had a significant impact on society, but
+                                    not all of it has been positive. One of the main negative impacts of technology is
+                                    the potential for increased social isolation and loneliness. With people spending
+                                    more time on devices and less time interacting with others in person, there has been
+                                    a decline in face-to-face communication skills and an increase in feelings of
+                                    loneliness and disconnection.<span id="dots5">..</span><span id="more5">
+                                        <br>
+                                        <br>
+
+                                        Furthermore, its contribution to the spread of
+                                        misinformation. The internet has made it easier for false information and fake
+                                        news to be spread quickly, leading to confusion and misunderstandings. This can
+                                        be especially problematic when it comes to important issues like politics and
+                                        health.
+                                    </span></p>
+                                <button onclick="readMore5()" id="rm5">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Three Blog Row -->
+
+        <!-- Conclusion -->
+        <article>
+            <div class="wrapper">
+                <div class="blog">
+                    <h2>Overall Conclusion</h2>
+
+                    <div class="blog-body">
+                        <div class="blog-para">
+                            <p>
+                                In conclusion,the positive impact of technology cannot be overstated. It has improved
+                                our lives in countless ways and has opened up a world of new possibilities for the
+                                future, but it is important to be mindful of its negative impacts and work to mitigate
+                                them. While technology has not only made it easier to sell bonsai plants but also
+                                conduct businesses in other sectors, it is important to use it responsibly and consider
+                                its potential impacts.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Conclusion -->
+
+    </section>
+    <!-- Blog Section -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="fr-logo">
+            <a href="../index.html">
+                <img src="../images/logo-f.png" alt="logo" width="75px" height="90%">
+            </a>
+        </div>
+
+        <div class="foot-columns">
+            <div class="column1">
+                <h2>Follow our Socials</h2>
+                <div class="icons">
+                    <a href="https://www.facebook.com/login.php/" target="_blank">
+                        <img src="../nav and footer/fb.png" alt="facebook" style="width: 90px;">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../nav and footer/insta.png" alt="insta" style="width: 90px;">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../nav and footer/tw.png" alt="twitter" style="width: 90px;">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="column2">
+                <ul>
+                    <a href="products.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="research.html">
+                        <li>Research</li>
+                    </a>
+                    <a href="aboutus.html">
+                        <li>About us</li>
+                    </a>
+                    <a href="contact-us.html">
+                        <li>Contact us</li>
+                    </a>
+                </ul>
+            </div>
+            <hr>
+            <div class="column3">
+                <h2>Subscribe for the latest news and updates</h2>
+                <div class="col3-mail">
+                    <input type="text" placeholder="example@gmail.com">
+                </div>
+                <div class="col3-sub">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="last">
+            <p>Copyright &copy; 2023 Bonzai Company | Terms of Use | Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- Footer Section -->
+
+    <!-- JavaScript -->
+    <script>
+        // Same condition is applied in every function
+
+        function readMore1() {
+            // Assigning variables by Id
+            var dots = document.getElementById("dots1");
+            var moreText = document.getElementById("more1");
+            var rmText = document.getElementById("rm1");
+
+            // Checking the conditions and making changes according to it.
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                rmText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            else {
+                dots.style.display = "none";
+                rmText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function readMore2() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var rmText = document.getElementById("rm2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                rmText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            else {
+                dots.style.display = "none";
+                rmText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function readMore3() {
+            var dots = document.getElementById("dots3");
+            var moreText = document.getElementById("more3");
+            var rmText = document.getElementById("rm3");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                rmText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            else {
+                dots.style.display = "none";
+                rmText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function readMore4() {
+            var dots = document.getElementById("dots4");
+            var moreText = document.getElementById("more4");
+            var rmText = document.getElementById("rm4");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                rmText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            else {
+                dots.style.display = "none";
+                rmText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function readMore5() {
+            var dots = document.getElementById("dots5");
+            var moreText = document.getElementById("more5");
+            var rmText = document.getElementById("rm5");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                rmText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            }
+            else {
+                dots.style.display = "none";
+                rmText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <!-- JavaScript -->
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+/* Footer  */
+
+/* Style for the entire footer section */
+footer {
+    border-top: 2px solid black;
+
+    background-color: white;
+    color: black;
+    padding: 20px 20px 0 20px;
+}
+
+/* Style for logo in footer */
+.fr-logo {
+    margin-bottom: 10px;
+}
+
+/* Style for columns in footer */
+.foot-columns {
+    display: flex;
+}
+
+/* Style for class column1 in footer */
+.column1 {
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for heading in class column1*/
+.column1 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Style for icons in class column1*/
+.column1 .icons {
+    flex-basis: 100%;
+    display: flex;
+    margin: auto;
+
+}
+
+.icons a img {
+    transition: .4s;
+}
+
+.icons a img:hover {
+    transform: scale(1.25);
+}
+
+.icons>* {
+    flex-basis: 100%;
+    display: flex;
+}
+
+/* Style for class column1 in footer */
+.column2 {
+    display: flex;
+    flex-basis: 30%;
+}
+
+/* Style for navigation section in footer */
+.column2 ul {
+    list-style: none;
+}
+
+.column2 a {
+    text-decoration: none;
+}
+
+.column2 li {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    transition: .25s;
+}
+
+.column2 li:hover {
+    transform: scale(1.1);
+}
+
+/* Style for email subscription in footer */
+.column3 {
+    flex-basis: 30%;
+}
+
+.column3 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    word-spacing: 6px;
+}
+
+.column3 .col3-mail {
+    display: flex;
+    justify-content: center;
+}
+
+.col3-mail input[type=text] {
+    margin: 20px 0;
+    padding: 10px;
+    width: 350px;
+
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid black;
+
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column3 .col3-sub {
+    display: flex;
+    justify-content: center;
+}
+
+.col3-sub button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+    background-color: #e86434;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for copyright owner section in footer */
+.last {
+    padding: 8px 0;
+    text-align: center;
+}
+
+/* Footer  */

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Product sub page of Bonsai Plant E-commerce">
+    <meta name="keywords" content="bonzai, bonsai, bonsai online, buy bonsai online, special offer in bonsai, products of bonsai">
+    <meta name="author" content="Krish Bhattarai">
+    <title>Products sub</title>
+    <link rel="stylesheet" href="../nav and footer/nav-style-only.css">
+    <link rel="stylesheet" href="../nav and footer/footer-style-only.css">
+    <style>
+        /* This styles the universal selector */
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style for the seperating the a section into two parts */
+        .flex-container {
+            display: flex;
+        }
+
+        .left-section {
+            flex-basis: 75%;
+            padding-left: 20px;
+        }
+
+        .right-section {
+            flex-basis: 25%;
+            text-align: center;
+            flex: auto;
+        }
+
+        /* Style for class gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 1500px;
+        }
+
+        /* Style for the images in class gallery */
+        .Image {
+            width: 360px;
+            height: 280px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin: 15px;
+        }
+
+        .Image img {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            padding: 10px;
+        }
+
+        /* Style for the images when hovered */
+        .Image:hover {
+            transform: scale(1.1);
+        }
+
+        /* Style for description*/
+        .desc {
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+
+        .horizontal-line {
+            border-bottom: 2px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Style for Buy Now button*/
+        .buy-now {
+            display: flex;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            background-color: rgb(2, 150, 64);
+            border-radius: 10px;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+
+        /* Style for stats section*/
+        .about {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for points in stats section*/
+        .point {
+            padding: 5px;
+            padding-top: 10px;
+            padding-left: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        /* Style for inline section*/
+        .inline {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 28px;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: line-through;
+            font-style: italic;
+            padding-top: 2px;
+        }
+
+        .box {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            border-radius: 10px;
+            font-weight: bolder;
+            margin-left: 80px;
+        }
+
+        /* Style for old price*/
+        .Old {
+            font-size: 22px;
+            text-decoration: line-through;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: line-through;
+            color: black;
+            text-align: center;
+            margin-left: 30px;
+        }
+
+        /* Style for discount percentage*/
+        .Percentage {
+            font-size: 20px;
+            font-style: italic;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style for new price*/
+        .Price {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="h-logo">
+            <a href="../index.html">
+                <img src="../nav and footer/logo-f.png" alt="logo" width="50px" height="90%">
+            </a>
+        </div>
+        <div class="h-slogan">
+            <p>Make Your Bonsai Dreams Come True</p>
+            <div class="navbar">
+                <ul>
+                    <a href="../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="products.html">
+                        <li class="active">Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="research.html">
+                        <li>Research</li>
+                    </a>
+                    <a href="aboutus.html">
+                        <li>About us</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="h-search">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for Bonsai">
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="h-profile">
+            <a href="#">
+                <img src="../nav and footer/login-f-100.png" alt="login" width="50px" height="50px">
+            </a>
+        </div>
+
+        <div class="h-cart">
+            <a href="#">
+                <img src="../nav and footer/cart-f-500.png" alt="cart" width="50px" height="50px">
+            </a>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+    <section id="space" style="height: 85px;">
+
+    </section>
+    <br>
+    <div class="flex-container">
+        <div class="left-section">
+            <div class="Picture">
+                <img src="../Bonsai Tree Pictures/Azalea Bonsai.png">
+            </div>
+        </div>
+
+        <!-- Right Section about Azalea Bonsai -->
+        <div class="right-section">
+            <h1 style="font-size: 60px; font-family:Arial, Helvetica, sans-serif;">Azalea Bonsai</h1>
+            <br>
+            <p
+                style="padding-left: 40px; padding-right: 40px; font-family: Arial, Helvetica, sans-serif; text-align: justify;">
+                Azalea is a very beautiful bonsai tree due to its flowers.
+                They are an evergreen bonsai so even if the Azalea is not in bloom they are just as beautiful.
+                Azalea are a gorgeous indoor bonsai species that produce beautiful flowers when blooming.
+                Azaleas are available in different flower colors and bloom in late spring.
+                They typically grow smaller leaves than most bonsai trees which makes them a perfect choice for a
+                bonsai.
+            </p>
+            <br>
+            <hr class="horizontal-line">
+            <br>
+            <ul class="about">
+                <p
+                    style="text-align: left; padding-left: 40px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder ; font-size: 20px;">
+                    Before you buy</p>
+                <li class="point">Soil Type: Needs Moist Soil</li>
+                <li class="point">Placement: Partially Shady Location</li>
+                <li class="point">Fertilizing: Acidic Fertilizer</li>
+            </ul>
+
+            <!-- Button -->
+            <div class="buy-now">
+                <button
+                    style="text-align: left; text-decoration: none; font-weight: bold; font-size: 15px; display: inline-block; margin: 8px 0; padding: 8px; cursor: pointer;">Buy
+                    Now</button>
+                <!-- End of Button -->
+
+                <span class="inline">RS.12000</span>
+                <span style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-style: italic;">15%
+                    off</span>
+                <span
+                    style="font-size: 35px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-left:20px ;">RS.10200</span>
+            </div>
+        </div>
+        <!-- End Of Right Section about Azalea Bonsai -->
+    </div>
+    <br>
+
+    <!-- Other Products -->
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Other Products</h1>
+    <br>
+    <div>
+        <div class="gallery">
+            <div class="Image">
+                <a href="">
+                    <img src="../Bonsai Tree Pictures/Weeping Fig.png">
+                </a>
+                <a class="box" href="https://www.example.com">Weeping Fig</a>
+                <br>
+                <a class="Old" href="https://www.example.com">RS.12800</a>
+                <a class="Percentage" href="https://www.example.com">15% OFF</a>
+                <a class="Price" href="https://www.example.com">RS.10880</a>
+            </div>
+
+            <div class="Image">
+                <a href="">
+                    <img src="../Bonsai Tree Pictures/Japanese Bonsai Maple.png">
+                </a>
+                <a class="box" href="https://www.example.com">Japanese Maple</a>
+                <br>
+                <a class="Old" href="https://www.example.com">RS.9000</a>
+                <a class="Percentage" href="https://www.example.com">15% OFF</a>
+                <a class="Price" href="https://www.example.com">RS.7650</a>
+            </div>
+
+            <div class="Image">
+                <a href="">
+                    <img src="../Bonsai Tree Pictures/Korean Fir.png">
+                </a>
+                <a class="box" href="https://www.example.com">Korean Fir</a>
+                <br>
+                <a class="Old" href="https://www.example.com">RS.8800</a>
+                <a class="Percentage" href="https://www.example.com">15% OFF</a>
+                <a class="Price" href="https://www.example.com">RS.7480</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Other Products -->
+
+    <br>
+
+    <!-- Footer -->
+    <footer>
+        <div class="fr-logo">
+            <a href="../index.html">
+                <img src="../nav and footer/logo-f.png" alt="logo" width="75px" height="90%">
+            </a>
+        </div>
+
+        <div class="foot-columns">
+            <div class="column1">
+                <h2>Follow our Socials</h2>
+                <div class="icons">
+                    <a href="https://www.facebook.com/login.php/" target="_blank">
+                        <img src="../nav and footer/fb.png" alt="facebook" style="width: 90px;">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../nav and footer/insta.png" alt="insta" style="width: 90px;">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../nav and footer/tw.png" alt="twitter" style="width: 90px;">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="column2">
+                <ul>
+                    <a href="products.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="research.html">
+                        <li>Research</li>
+                    </a>
+                    <a href="aboutus.html">
+                        <li>About us</li>
+                    </a>
+                </ul>
+            </div>
+            <hr>
+            <div class="column3">
+                <h2>Subscribe for the latest news and updates</h2>
+                <div class="col3-mail">
+                    <input type="text" placeholder="example@gmail.com">
+                </div>
+                <div class="col3-sub">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="last">
+            <p>Copyright &copy; 2023 Bonzai Company | Terms of Use | Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+</body>
+
+</html>
